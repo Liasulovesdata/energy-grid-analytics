@@ -28,9 +28,7 @@ ORDER BY total_energy_consumed DESC
 LIMIT 1;
 
 
--- Task 3: Solar Efficiency (corrected order of operations)
--- Original bug: SUM(solar) / ROUND(SUM(solar+grid)*100,2) divided by (total * 100)
--- Fix: divide solar by total, then multiply by 100
+-- Task 3: Solar Efficiency 
 SELECT
     f.facility_id,
     f.facility_name,
